@@ -6,7 +6,5 @@
 //  Copyright © 2016 Naoto Kaneko. All rights reserved.
 //
 
-import Foundation
-
-print("Hello, World!")
-
+let result = Command().run()
+print(result)
