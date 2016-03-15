@@ -1,2 +1,8 @@
 # clr
-[WIP]A command to create colorlists files
+
+## Usage
+
+```sh
+$ clr COLORLIST NAME=#HEX [NAME=#HEX ...]
+```
+
