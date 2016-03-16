@@ -24,9 +24,9 @@ extension NSColor {
         }
         
         let number = Int(hex, radix: 16)!
-        let red = CGFloat((number >> 16) & 0xFF)
-        let green = CGFloat((number >> 8) & 0xFF)
-        let blue = CGFloat(number & 0xFF)
+        let red = CGFloat((number >> 16) & 0xFF) / 255.0
+        let green = CGFloat((number >> 8) & 0xFF) / 255.0
+        let blue = CGFloat(number & 0xFF) / 255.0
         self.init(red: red, green: green, blue: blue, alpha: 1)
     }
 }
