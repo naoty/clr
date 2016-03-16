@@ -10,7 +10,7 @@ import Foundation
 
 struct Application {
     private let arguments: [String]
-    private let version = Version(major: 0, minor: 1, patch: 0)
+    private let version = Version(major: 0, minor: 1, patch: 1)
     private let author = "Naoto Kaneko <naoty.k@gmail.com>"
     
     var usage: String {
