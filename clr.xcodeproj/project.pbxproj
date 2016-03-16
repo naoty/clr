@@ -11,6 +11,8 @@
 		3D769B8F1C9877BE00716292 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B8E1C9877BE00716292 /* Application.swift */; };
 		3D769B911C98782600716292 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B901C98782600716292 /* Version.swift */; };
 		3D96D6231C99234200CE3555 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96D6221C99234200CE3555 /* Result.swift */; };
+		3D96D6251C992B3100CE3555 /* ColorListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96D6241C992B3100CE3555 /* ColorListFactory.swift */; };
+		3D96D6271C9934BF00CE3555 /* NSColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96D6261C9934BF00CE3555 /* NSColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		3D769B8E1C9877BE00716292 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		3D769B901C98782600716292 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		3D96D6221C99234200CE3555 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3D96D6241C992B3100CE3555 /* ColorListFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorListFactory.swift; sourceTree = "<group>"; };
+		3D96D6261C9934BF00CE3555 /* NSColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				3D769B8E1C9877BE00716292 /* Application.swift */,
+				3D96D6241C992B3100CE3555 /* ColorListFactory.swift */,
 				3D769B861C98700E00716292 /* main.swift */,
+				3D96D6261C9934BF00CE3555 /* NSColor+Hex.swift */,
 				3D96D6221C99234200CE3555 /* Result.swift */,
 				3D769B901C98782600716292 /* Version.swift */,
 			);
@@ -148,6 +154,8 @@
 				3D769B871C98700E00716292 /* main.swift in Sources */,
 				3D769B911C98782600716292 /* Version.swift in Sources */,
 				3D96D6231C99234200CE3555 /* Result.swift in Sources */,
+				3D96D6251C992B3100CE3555 /* ColorListFactory.swift in Sources */,
+				3D96D6271C9934BF00CE3555 /* NSColor+Hex.swift in Sources */,
 				3D769B8F1C9877BE00716292 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
