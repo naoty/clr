@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D769B871C98700E00716292 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B861C98700E00716292 /* main.swift */; };
-		3D769B8F1C9877BE00716292 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B8E1C9877BE00716292 /* Command.swift */; };
+		3D769B8F1C9877BE00716292 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B8E1C9877BE00716292 /* Application.swift */; };
 		3D769B911C98782600716292 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D769B901C98782600716292 /* Version.swift */; };
+		3D96D6231C99234200CE3555 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96D6221C99234200CE3555 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +28,9 @@
 /* Begin PBXFileReference section */
 		3D769B831C98700E00716292 /* clr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = clr; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D769B861C98700E00716292 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3D769B8E1C9877BE00716292 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		3D769B8E1C9877BE00716292 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		3D769B901C98782600716292 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		3D96D6221C99234200CE3555 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 		3D769B851C98700E00716292 /* clr */ = {
 			isa = PBXGroup;
 			children = (
+				3D769B8E1C9877BE00716292 /* Application.swift */,
 				3D769B861C98700E00716292 /* main.swift */,
-				3D769B8E1C9877BE00716292 /* Command.swift */,
+				3D96D6221C99234200CE3555 /* Result.swift */,
 				3D769B901C98782600716292 /* Version.swift */,
 			);
 			path = clr;
@@ -144,7 +147,8 @@
 			files = (
 				3D769B871C98700E00716292 /* main.swift in Sources */,
 				3D769B911C98782600716292 /* Version.swift in Sources */,
-				3D769B8F1C9877BE00716292 /* Command.swift in Sources */,
+				3D96D6231C99234200CE3555 /* Result.swift in Sources */,
+				3D769B8F1C9877BE00716292 /* Application.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +268,7 @@
 				3D769B8C1C98700E00716292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,5 +6,18 @@
 //  Copyright © 2016 Naoto Kaneko. All rights reserved.
 //
 
-let result = Command().run()
-print(result)
+import Foundation
+
+let result = Application(arguments: Process.arguments).run()
+
+switch result {
+case .Success(let message):
+    print(message)
+    exit(0)
+case .Failure(let message, let exitCode):
+    let stderr = NSFileHandle.fileHandleWithStandardError()
+    if let data = message.dataUsingEncoding(NSUTF8StringEncoding) {
+        stderr.writeData(data)
+    }
+    exit(Int32(exitCode))
+}
