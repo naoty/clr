@@ -1,0 +1,14 @@
+language: objective-c
+osx_image: xcode7.2
+xcode_project: clr.xcodeproj
+xcode_scheme: clr
+xcode_sdk: macosx10.11
+deploy:
+  provider: releases
+  api_key:
+    secure: alcf9rztsQBNWe73/q/ZxTgM8nzPTGcqHHATCSwoNKMs9HA8H6n2fx8yHYsy8VvyacgA6byy/ZtfacRjNqJ6AjrUWEE2jRNKgM4zbp6ltrrWefjux3FS2dtKt5mySvU33ntZ0teOAtt/u5zJCMmsl4v0hhA0Nlks06Aujx97lu4YlSSAuHC6IdUNYyhq6gOMRf97ErWhBprkXsx9TVCIyROf4U2liqM/8vUK/LFPrtsrjci4az35sfKrk1vYyFEW+cd6OBq39VN/M/OIBwT8P4VjLsn5LB4VC8gjV24QcCp0jHqsqe8zzKdGDrhJqlfrsWvx7VMtvjBzOinw+W3ZSVVcyZIDNkMqb+bdoYV7W0SEEDv59V1/U7PNswDIc2/SSrrgOVr7jdg0j0UedE+V0xwzhvHxfWJEtRula3MTyQ9RpMbFo4JePly0kjcx8RFO4ZL1g5mcg9ZWzTVevsWAnmWtBMDFssrteIH+VdBbM5id8QPuyOu2FWw8jV7VVwbLjKZDKBBZBKbEnIjNMc+z9xvT16ASO+7nkgGd5KIz4mt+pY7Pquev3oOJqg86HiWYhqUIGemSv8LtOdRkkxzRLQvUU5IPAtEuiiTG3QlKE+nyMk9z6zwh+FB1lbj7sMtPeg7O9OQZG1cV5ojIHSDsA299XuixGAx+S52oVBJhnmc=
+  file: bin/clr
+  skip_cleanup: true
+  on:
+    repo: naoty/clr
+    branch: travis-ci

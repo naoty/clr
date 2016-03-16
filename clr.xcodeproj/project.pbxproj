@@ -142,7 +142,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp $BUILT_PRODUCTS_DIR/clr $SRCROOT/bin/clr";
+			shellScript = "mkdir -p $SRCROOT/bin\ncp $BUILT_PRODUCTS_DIR/clr $SRCROOT/bin/clr";
 		};
 /* End PBXShellScriptBuildPhase section */
 
