@@ -9,9 +9,9 @@
 import Foundation
 
 struct Application {
-    private let arguments: [String]
-    private let version = Version(major: 0, minor: 1, patch: 1)
-    private let author = "Naoto Kaneko <naoty.k@gmail.com>"
+    fileprivate let arguments: [String]
+    fileprivate let version = Version(major: 0, minor: 1, patch: 1)
+    fileprivate let author = "Naoto Kaneko <naoty.k@gmail.com>"
     
     var usage: String {
         return [
@@ -27,7 +27,7 @@ struct Application {
             "COMMANDS:",
             "   help         Show help",
             ""
-        ].joinWithSeparator("\n")
+        ].joined(separator: "\n")
     }
     
     init(arguments: [String]) {
@@ -36,11 +36,11 @@ struct Application {
     
     func run() -> Result {
         if arguments.count < 2 {
-            return Result.Failure(message: usage, exitCode: 1)
+            return Result.failure(message: usage, exitCode: 1)
         }
         
         if arguments[1] == "help" {
-            return Result.Failure(message: usage, exitCode: 1)
+            return Result.failure(message: usage, exitCode: 1)
         }
         
         let colorCodes = parseColorCodes(arguments[2..<arguments.count])
@@ -48,17 +48,17 @@ struct Application {
         
         if factory.generate() {
             let message = "Created"
-            return Result.Success(message: message)
+            return Result.success(message: message)
         } else {
             let message = "Failed"
-            return Result.Failure(message: message, exitCode: 1)
+            return Result.failure(message: message, exitCode: 1)
         }
     }
     
-    private func parseColorCodes(arguments: ArraySlice<String>) -> [String: String] {
+    fileprivate func parseColorCodes(_ arguments: ArraySlice<String>) -> [String: String] {
         var colorCodes: [String: String] = [:]
         for argument in arguments {
-            let colorNameAndHex = argument.componentsSeparatedByString("=")
+            let colorNameAndHex = argument.components(separatedBy: "=")
             colorCodes[colorNameAndHex[0]] = colorNameAndHex[1]
         }
         return colorCodes

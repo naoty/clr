@@ -19,7 +19,7 @@ struct ColorListFactory {
     
     func generate() -> Bool {
         let list = NSColorList(factory: self)
-        return list.writeToFile(nil)
+        return list.write(toFile: nil)
     }
 }
 

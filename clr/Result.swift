@@ -7,6 +7,6 @@
 //
 
 enum Result {
-    case Success(message: String)
-    case Failure(message: String, exitCode: Int)
+    case success(message: String)
+    case failure(message: String, exitCode: Int)
 }

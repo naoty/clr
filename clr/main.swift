@@ -8,16 +8,16 @@
 
 import Foundation
 
-let result = Application(arguments: Process.arguments).run()
+let result = Application(arguments: CommandLine.arguments).run()
 
 switch result {
-case .Success(let message):
+case .success(let message):
     print(message)
     exit(0)
-case .Failure(let message, let exitCode):
-    let stderr = NSFileHandle.fileHandleWithStandardError()
-    if let data = message.dataUsingEncoding(NSUTF8StringEncoding) {
-        stderr.writeData(data)
+case .failure(let message, let exitCode):
+    let stderr = FileHandle.standardError
+    if let data = message.data(using: String.Encoding.utf8) {
+        stderr.write(data)
     }
     exit(Int32(exitCode))
 }
