@@ -17,4 +17,4 @@ before_install:
 before_script:
   - set -o pipefail
 script:
- - xcodebuild -project clr.xcodeproj -scheme clr -sdk macosx10.12 test | xcpretty -c
+ - xcodebuild build -project clr.xcodeproj -scheme clr -sdk macosx10.12 | xcpretty -c
