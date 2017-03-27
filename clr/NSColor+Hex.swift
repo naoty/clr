@@ -27,6 +27,6 @@ extension NSColor {
         let red = CGFloat((number >> 16) & 0xFF) / 255.0
         let green = CGFloat((number >> 8) & 0xFF) / 255.0
         let blue = CGFloat(number & 0xFF) / 255.0
-        self.init(srgbRed: red, green: green, blue: blue, alpha: 1)
+        self.init(red: red, green: green, blue: blue, alpha: 1)
     }
 }
