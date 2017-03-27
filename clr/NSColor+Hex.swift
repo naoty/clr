@@ -18,8 +18,8 @@ extension NSColor {
         }
         
         if hex.characters.count == 3 {
-            for (index, char) in hex.characters.enumerate() {
-                hex.insert(char, atIndex: hex.startIndex.advancedBy(index * 2))
+            for (index, char) in hex.characters.enumerated() {
+                hex.insert(char, at: hex.characters.index(hex.startIndex, offsetBy: index * 2))
             }
         }
         
